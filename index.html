@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        background-color: aliceblue;
+      }
+      .body {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+      }
+      .heading {
+        width: fit-content;
+        margin: 30px auto;
+      }
+      .img-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+      }
+      .card {
+        background-color: white;
+        margin-top: 35px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 17%;
+        padding: 30px;
+      }
+      .card img {
+        width: 100%;
+      }
+      .btn-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px #ed0331 solid;
+        background-color: transparent;
+        color: #ed0331;
+        margin: 30px;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 17%;
+        /* height: 130px; */
+        margin-top: 100px;
+        border: 1px lightgray solid;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      .brand img {
+        width: 60%;
+      }
+      .footer-heading {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="heading">Masai In The News</h1>
+      <section class="body">
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/The_Economic_Times_logo.svg/2560px-The_Economic_Times_logo.svg.png"
+              alt="img"
+            />
+          </div>
+          <h4 class="date">21 Dec 2021</h4>
+          <h3 class="title">
+            Edtech startup masai school acquires analytics firm Prepleaf for
+            $1million.
+          </h3>
+          <p class="desc">
+            With their latest accquisition, Masai moves one step closer to
+            becoming...
+          </p>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQSEhUTEhMVFRIXFREWFhYYFhcWGxgWFhsWGhYYGhcaICggGyElHxUXITEjJSorLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGi8lICU4MysvLy03Ny0yLzAtMC03Ly0tLy0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAIcBdwMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcBBQgEAwL/xABLEAABAwEEBAcMBwcDBAMAAAABAAIDEQQFEiEGBzFRE0FhcXKBkRciMjM0U3OTobGy0jVCUpKis8EUI0NigoPRY3TCJOHi8RZU8P/EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/xAA2EQABAwIBBRACAwEBAAAAAAABAAIDBBExEhMhQfAFFTI0QlFSYnGBkaGxwdHhFGEiM/Gykv/aAAwDAQACEQMRAD8AvFEXkttujhbile1g4q8fIBtPUuE2Fyi9aKHW/TqMZQsc873d43/J7Ao3bdKrVL/EwDdGKfi8L2rK+tibgb9nzh5rO6pjGGns2srSc4DM5DlXgnvyzs8KeOu7ECewKopXFxq4lx3uNT2nNFnO6B1N8/oKo1Z1BWi/S6yD+N2RyH/ivyNMrJ5w+rl+VVgir/Pl5ht3qH5T/wBbd6tOPSuyHZMBzte33he2G9oH5Mmjcdwe2vZWqp9CFIboP1tHmF0VbtYCu5ZVIwvLDVhLTvaS09oW3selVqj/AIpeNzwHe3wvarW7oNPCbbzVgq26xt5K10UFsWnuwTQ85Yf+LvmW8selllky4TAf5wW/iOXtWllTE7B3t6q5s0bsCt8i+ccocKtII3g1HaF9FerURERERERERFp760ghswo81kpkxuZ5K/ZHKVFzg0XcbBcJAFytwio3Te95LVhdIaAO71g2NFD2nef/AEolRa6OnFTEJAbDTq5j2rzpN0Qx1g2/fb2K6fRcwUSi1b3dby+1Xvp1PP6XT6LmCiUTe7reX2m+nU8/pdPouYKJRN7ut5fab6dTz+l0+i5golE3u63l9pvp1PP6XT6LmCiUTe7reX2m+nU8/pdPouYKJRN7ut5fab6dTz+l0+i5golE3u63l9pvp1PP6XT6LmCiUTe7reX2m+nU8/pdPouYKJRN7ut5fab6dTz+l0+i5golE3u63l9pvp1PP6XT6LmBwyPMV08s1TTZm2m99uda6Wqz99Frfu+N/wBDmWURFlWtFTl9PLrRMXEuIkkAJJNAHOAGfEFcapq9/Hzekl+JywbocAdqyVeAXlREXlLCiIiIiIiIiIiIiIiIiwsoiL6Wad8ZrG9zDva4t921bqzaYWpgoXtf02D3totCikx7mcE2Umvc3A2Uzs2nzv4kAPK19PwkfqtjHp1ZztbI3+lp9zlXaLQ2tmGu/bsFaKmQa1ZJ03sv+p9z/JXjtWn0Y8XE9x/mLWj2YlAkXTWynm8F01Mn6W/t+mFpkqA5sTT9gZ06RJPZRR8muZzPGVlFme9zzdxuqXOc7hG61d+eA3pfoVpFu788BvS/QrSL7LcTibe0+pXnzcJZREXrKpERERERERERERERYRFlF+arKIsoiIiIiIiIiwiIisjVRdUE7JzNDHKWujoXsa6lQ6tKjJR3WLY44bbIyJjY2BsVGtaGgVaCcgs4nBlMdsFpdTFsQlvioy/YeYrp1cxP2HmK6dWTdHk9/st25fL7vdZREXmL1UVNXv4+b0kvxOVyqm738fN6SX4nLBuhwB2+yyVeAXkRfe77IZpGRNIBeSATs6+xbq8ND5osFCx7nvwANqMyHOqSRkAGlea2J7m5QFwsbWOcLgKPIpqzQHvM5/3lOJlW822p5/Yo7HcMxtBs+H94MyfqgfbruzHLnSlVN9PK2124qTonttcYrWIprLoD3nez1kpxso0ndkajnzUOtVnfE9zJGlr2mhHtGzbkQuSQvj4QXHxuZwgvmi/UUTnuDWguc40AG0lTCwaBktBmlwuI8FoBpzuO3qHauRwvk4IRkbn8EKGopBf2islnBe08JENpAoW843co7Ao+uPY5hs4WXHNLTZyIpHZtD5XxNmEjA1zA6hxVoRWmzavrcmhz5mCSV/BhwBa0CrqHYTnlzbeZTFNKSBk46VMQvJtZRdFuNIdHpLKQSccZyDwKZ7nDOn6rTqt7HMNnCxUHNLTYoi3+j+i0lpGNx4OLidSpd0Ru5T7Vsrx0ELWkwyY3AeA4AV5nbAecdatbTSublAKbYZCLgKHIvoITjwO704wx1fqmtDXm/RSK1aEzMY5+NjsLXOwjFU0FaCo2qDInvuWi9lFrHOvYKMoi3VyaNSWphexzWtDsPfVzIAJpQcqixjnmzRdca0uNgojfngN6X6FaRSjTO7zZ3cE5wc5pbUitM21pnyEdq12jej01tkwRABooXvPgsBrSu8mhoBt5s19luQc3RjK0WLr/APorFLG4y5IGlahZVpO1TswZWl3CU28GMNejWvtVf39cc1jl4KZoBpVrgate3ZVp/Q0I3bFvjqY5DZp0pLSyxC7hoWsRfprSSAASTQADMknYAFYVxasJHsD7VJwROyNoDnDdidWgPIK8/EpSzMjF3FQigfKbMCrtZU50l1cS2dpks7uHYAS5uGj2gcYANH8eyh5CoKpRyskF2lclhfEbPFkRTG4tAJrXAydksTWvx0DsVRhc5prQU2tX30c1dy2jE+V4iiDntaQMTn4SWkgEjC2oOZzO6lCq3VMQvd2CsbSyutZuKg6KXaX6DSWJvCtfwsFQC7Dhcwk0GIVNQa0qOPiC12imjb7fI6Nj2swNDiXAnImmQG09ikJ43MywdCi6nkD82RpVraDWZhu6EljScMuZaPtPVGDYOYLo+7rvbBAyBngsYGAnaaClTyk59apbSbQuWwRMkkkjeHPbGAzFWpa91cwMu8PasFFK3OPueEdHmvRroXljCBwRp8lGUUu0f0BmtcDZ45YmtcXgB2KveuLTsBHEvzcmglotDpKFjI2SSR8I6tHOY4tdgaMzmNpp71u/IjF7uwxXnimlNrNxwUTRe++7tNmnkgc4OMbqFwFAcgdnWpHotoDLamiWR3AwnNppic8b2tqKDlPYRmpPmYxuWToUWQPe/IaNKhqKyr51WOawus02NwHgPAbi5njIHcCKcoVczwuY4seC17SWuaRQgjIghcjnZJwSuy074j/MK0NS/i7T04vc5RjWj9ISdGH4ApPqX8XaenF7nKMa0fpGToQ/CFjj42/s+Ftm4k3t+VEn7DzFdOrmJ+w8xXTqjujye/2Vm5fL7vdZREXmL1UVNXv4+b0kvxOVyqmr38fN6SX4nLBuhwB2rJV4BerRbyuDp/oVatoka1pe8gNaC4k8QAzKqrRbyuDp/oVNdYEpFkoNjpGNPMKu97QoUb8iF7ub4C5TuyY3O5lsrsv2C0EtifVwzIIc003gOAqF6ZxHHimdhbRoDnnia2ppXdUntVbaFvItkVOPhAebA4+8BSvWJKRZQBsdKwHmAc73tCujqC6EvcNIVjJiYy4jBbW6r7htOLgnVLaVBa5podho4ciimseyASRSja5r2u/ooW/EewLV6EPItsdPrCQHmwk+9o7FIdZA/dxdN/uVRkM1M4uxH0q3PzkJJXm1eXZUvtDhsqxnP9d3tA+8pNe1/QWcgSvo45hoBcabyBsHOvPoUylji5eEPa93/ZVzfVpdJPK9xqS9wHI0EhoHMAumTMQNyRpPxddL81E22JVsQTxzx4mkPjcCN4IORBHsIVU37YP2eeSIeCD3vRcAW9gNOpSXVvajili4iGvHODhd21b2Lzaxo6Txu+1HT7rj8wUKlwlpxJrH+FRmIkiD9e11MribWywA+aj+EL5z6Q2dkvAukAfUA5GgJ4i6lAvpcRpZYTuiYfwhVE95dVxzLqkneXZn3q2oqDCxthj7AKyWYxtbZW5pHZeFs0rOPASOk3vm+0BVddFj4eaOKtA9xBO5oBc72Aq1rulL7PG9210TXHnc0EqB6uYsVpLj9WNxHOSB7iVGqYHyxjn9NioTtDns/anF53hFZIQ52TBRrGt2k0ya0cw9i8dwaTx2pxYGuY8CtDQ1HHQjdUdq+eldxSWvgwx7WtZjJBBNS6lDluAPatXdOh8sE0cvCsOB1SAHVIzBHYSrXunzoDW/x2v+9Ctc6TOWA/ivFrEsAbKyUDKRpa7pNpmecED+lS/Ry2cPZonk1JbhdyubVrvaCtVrFZWzNO6Rvta4LyaubbVkkJObXB7RyOyNOsfiUGnN1RHSF1Bv8ZyOdQ287LwMskfEx7mjog96eyis/Rey8FZImnI4S93IX1ca81adSieml04rZHhHj8A/qaQ1x6mlpUr0ptXBWSUjIlmBvO/vRTmrXqUKaMRPkccG/wC+llGFgY55Or/VT+ltsMznSn68hd1AGg6hQdStvQ65hY7LHF9cjHId73ZkdWTRyNCq6yWYS2izMIqDaIqje0Grh2AqytYVuMNgmc0kOcGxggkEYyGkgjYcJcvQo3OfSxx6yXHvLj9qmmAaXyu1f6V9WaZWMzcAJ28Jiw7HYcVaYcdMNa5bdq8esa5haLG92WOIOlaeRoJe3rbXrDdyoxTS+dYM8sDYGDADG1kjzRzpDhAfTiaDny57QvUdRlj2mM9t9tarbXNkY4Sjst+/hffVRcgmtDrQ8VZBTDyyOrT7oqectVm35pBBY2h078OIkNaAXOdTbRozoN+zMbwo5qhhw2JzvtzPPUGxt94KgOsW1ukvCbEahhaxg4mgNFQOup61F0efqS0nQPQKbZPx6VrhifUq57nvaG0xiSB4eytOMEEcTmnMHZt3hUxrBuMWS1OawUikAkYBsbWoc0czgabgQtnqjt5ZbHRfVljdl/Mzvmnsx9q2+ueDKzPpxzNJ58BHuKRMMNTkA6D8exXJnielyyNI29FJdWn0ZB/f/NkXqvTSmyWWRsMsoY+g70NcQ0HZiLQQ3r59i8mrT6Mg/v8A5sip/SaYyWu0OcakzTDqDiGjqAA6lBkAmneDhc+qskqDDTsLRpIHor9t1nbaIXx1BZJG5tRmKPFAQeuqqjVdb4rNaJv2iRkX7sN78hvfBwqM1YWr+cvu+zk7Qws6o3OYPY0Kkr9H/Uzj/WnH43KVLHlZyI7WKhVy5ObmG1wuh7NaGPYJGODmOAc1wNQWnMEHcq41o33Z7RZY2wTxyOE7XEMcHEN4OUVy4qkDrUy0V+j7P/t4/hC5+GwcwXKOEGQuvwT8/ClXTlkYbbhD4+VeWq/6Oh6U/wCY9SONjIm0FGsFTtAFSSSSeUknrUc1X/R0PSn/ADHquNZd7OntsjMRMUREbW1OHE0d+7DsriLhXcAqxCZZ3tvbSfVWGcQ07HWvoA8l7bZdQtl9SRHOMy4nkebaxrjmN+Ta/wAyte3WyKzRF8jmxxMAG4ADINAG3cAFWepmAGed9M2xMaP63V/4L965LwJkhs9e9DDKRxFzi5jewNd94q2VhkmbFfQAPTSVTDII4HTW0kn10BT64tJrNbMQgkxObmWkFrgN9DtHKFAtb1yhr47WwUD+8ky+uASxx52giv8AI1Q/RS3OgtkEjTT94xruVjyGvB6ieuit3WXBju6be3gnDqeyvsJQx/jztycCuiT8mndlDSPi4Uf1L+LtPTi9zlGNaP0jJ0IfhClGpjxdp6cXucovrR+kZOhD8IVsfHH9nwqJeJN7flRJ+w8xXTq5ifsPMV06o7o8nv8AZWbl8vu91lEReYvVRU1e/j5vSS/E5XKqavfx83pJficsG6HAHaslXgF6tFvK4On+hUy1ieSt9Kz4XqG6LeVwdP8AQqZaxPJW+kZ8L1RBxZ/f6BQi/peolob5bDzyflvUq1jeTs9MPgeorob5bDzyflvUq1j+Tx+lHwPXYeLP7/QLkf8AQ7bmUX0L8ti/uflvUi1k+Li6b/co7oX5bF/c/LepFrI8XF03+5ci4s/t+EZ/Q7bmW40PdWxw8zh2OcP0VY3g2ksg3PeOwlTrV5bg6B0P1o3E0/leSQe3F7N6/GkmiJmk4WFzWud4bXVAJ+0CAc94VkrHSwMLNNtj6KcjDJE0t1LW6t4jw0ruIMAPO51R8BWdZL/30Q3RuPa7/wAVK9HbmbZY8AOJxNXu2VO4DiAUB0ytoltb6GrWUjHV4X4i5cmaYqXJdif9XJG5EAacdirCuXySH0MfwBVBHsHMFb9y+SQ+hj+AKoI9g5goV3BZ2H0ao1WDez4VwXL5LB6GL4GqFatnUmeN8Vexzf8AKmty+Sw+hi+AKtdEbYIrTC4mjTVrjyOaQK9eE9SvndkyROO2CslOS6M7alO9JdIv2RzBwWMPDzXHhphpUbDvC040+rkLNn6T/wAFv9J7lFqiDQcMjTiYTsrsIPIf0Cj2j2iEjJmyT4Q1hDmtaa1cNhO4A58tF2X8jO2bgf0NHPj4qUmey7NwWu0g0q/aouD4LB3wdXHi2VFKYRvXn0MtfB2uOux+Jh/q8H8QatxrEETcAaxomcS5zgKHCMszx1J/CVDGvIIIyIIIPKMwsUznxzXcbkWWWVxbJcm5CuG1WBr5IpDtiLyMvtNLT+h6lFtZFpOGKIbCXvP9NA34ndil1gtQljZI3Y9rXdvEq00ztfCWuTOoZhjH9ObvxF3Yt9Y4CI25W3oFqqHAR6Ne3oFq7plDbXZCf/sRj71Wj3qda0YC+75CPqPicebEGnsxV6lVt8SFrWOaaOa8OadxFSD2gK7LJPFbbMHUDopo6OHIcnNO4g1HIQtdFdlNFJ+z/wBLNT2e18W2kbeK51Xstd2SxNjfJG5rJGtdG4jvXBwqKEZVpnTap83VU7hs52/s+Kuw48NfBp4NaZYq8tOJTLS18UNgmDmtEbYjGxtKjERgiAHIS3mpXiXsyVrbtDNN9vFZY6B1nGTRbbwWs1Syg2CnG2aVp5zR3ucFWmnUeG8LSP8AUJ+8A79VMNTl6AcNZjtJErOXINf2UZ2nctxpxoP+2OE0LmsnoGuxVwvA2EkAkEbK0NRlxBUtkENS7K1rQ6Mz0jcjEeyhGquAuvBhGxkcrjzUwe94Um1zyfu7M3e+V33Q0f8AJb7QfRQWBji5wfM+mJwrhAGxra50zqTx5blBtbd5iS1MiaaiFlHdOSjiPuhn/wCCB4lqg5uA+Plccww0ha7E+5+FOtWn0ZB/f/NkVN395TP6af43K5dWn0ZB/f8AzZFTV/eUz+mn+NynS/3yd/qoVfF4u70Vzatvo2z/AN782RUxf/lVo9NP8blc+rb6Ns/9782RUzf/AJVaPTT/ABuSl4xJ3+qVvF4+wf8AKvLRX6Ps/oI/hC59GwcwXQOhbw6wWamY4FjTztGEjtBCqvTLQo2BglEofG6URsbhIcAWvcMRrQ0DKcvJsUKN7WyPacSdHiVZXRufG1zcANPgFYuq/wCjoelP+Y9VFpT5bav9xaPzHq3dV30dD0p/zHqodKPLbV/uLT+Y9Tpf75O0+qhV8Wj7vRTTUu/95aRvZCewvr8QXk1wwEWuN/1XQtAPK176j8be1a3VneYgtzA40bKDGed1Cztc1rf6lZ+mOjTbdCG4sEjCXRvpWhORaRtwnLZxgHiooSvEVVluwI9reylEwzUeQ3EfN1SlxRl1phaNpliA63tV16xJcN3Wg72sb957G/qtHoVoCbLLw9ocx72ikbWVLWk5F5LgCTTICmVTyU/Gt69g2COzA9/I4PcNzGbO11KdErksgmnYG6QPm5UoY3QUzy/QT/i+Opjxdp6cXucovrR+kZOhD8IUo1MeLtPTi9zlF9aP0jJ0IfhCsj44/s+FTLxJu3Ook/YeYrp1cxP2HmK6dUd0eT3+ys3L5fd7rKIi8xeqipq9/Hzekl+JyuVU3e/j5vSS/E5YN0OAO32WSrwC/VxWlsVoikeaNa6pNCcqHiGakumF/wAFogDInEuEjXULXNyAcNpHKFDUXntmcxhYMCsrZC1paMCtjo7a2w2mKSQ0Y0vqaE7WOAyGe0hb/TK/oLTC1kTiXB4catcMsLxxjeQoeiNmc1hYMCjZCGFmorZ6NWxkNpjkkNGNx1NCdrHAZDPaQtxppfcNpZGInElrnE1a5uVKcYUURGzODCzUUEhDCzUV7LovJ1mlErM6VBacg5p2j3HqVk2HSSzStB4VjDTNr3YCN+3bzhVUinDUvi0DSFKKZ0egYKwNItLo2NLIHB8hBGNp71leMH6x5v8Asq+WUUJpnSm7lGSQvNyrAuzSmzMs8cbnkPbG1pGB574NAOdN6rxgyHMF+llJZnSgB2rb2R8hfa+pWFdmlNmZBExzzibGxpGB574NAOdN4VdNGVORftElmdLbK1beyPkL7X1KeaNaWsc0R2h2F4AAkPguHFU/VPPkVubfpJZoml3CseaZNYQ8ncMtnOclVSK9tbIG2On97Yq1tS8Cy9l73k60ymV+VaBrRsa0bBXrJ5yV4isrZaNWThrVEw7MVXczAXe2gHWsoDnutrKo0ud+yrMu+IWazta4+Ljq48wq49tVULpC4lzvCcSTznM+0qzNOrZwdlc0Ghkc1g5si72NI61Wa2V7hlNYNQ29Foqj/INGpau/fAb0v0K3egOmgsn7ieps5JIcASY3HbkMy07aDMHfVaS/PAb0v0K0i+j3IjbJQta7nPqV5hldFLlNXQn/AMpseHH+1Q0pXxja/driryUqqr0+0u/bHNjiqLOwkiooZH5jERxAAmg298Sdwh6LbDRsidlXuVOeufK3JtYa17LovF9nmZNGaPY6o3EbCDyEEjrV0XBpzZbQwYpGQy/Wje4Nof5XOoHDmz3gKi0Vk9M2XHQVCnqnw6BpHMrq0m0/s9nZSBzJ5jsDTiY3lc8ZdQzPJtVMzSue4ucS5ziXOJ2lxzJPOV80XYKdsQ0eKjUVL5j/ACVp6EaZ2SzWKKGWRzZG8LiAje7wpHuGYFNjgq3vWYPmle3NrpZXN4snOJGXMV5EXWQtjcXDWuS1DpGNYcArV0L00slmsUMMsjhI3hMQEb3bXvcMwKbCFWt7TB88z25tfLK5p2d65ziMjyFeRZXI4GscXDWklQ6RjWHAKfavdNI7Mz9ntFRFiLmSAE4cWZa4DOlamo4yar1az9JLNaLPHFBKJHiZrzQOoGhkjfCIpWrhkq2RR/FZnM4L3xVgrH5rN6LYdytHQbTKyWWxRwzSObI0ykgRvd4T3EZgU2EKvb9tDZLTPIw1Y+WV7TQirXvc5pocxkQvAilHA1jy8YlQkqHSMDDgPhfpppmMjxHZ2K39EdYEMrGx2l4jmaAC9xAZJTLFi2NJ4wct24U8iTwNlFnLkFQ6E3ar5vfTOxwMLuHZI6hwsjcHkniHe1Dec0VL6QXxJbJ3TSZE0DWjMMYPBaO0nlJJ41rkUYKRkWkaSrKisfMLHQFPdWuklnsbJxaHlpe6MtoxzqgB1fBBptWj07vOO02x8sLi6MtjAJBbmGgHIiqjyKTYGiQyayq3VDnRCI4BH7DzFdOrmJ+w8xXTqx7o8nv9l6G5fL7vdZREXmL1UVN3v4+b0kvxOVyKm738fN6SX4nLBuhwB2+yyVeAXkREXlLCiIhKIiLDTXZmv0WHcewpdLrCL8k02rK5cIsoiLqIiIiIiIiIiIiIpBoZboYJXyTPwnDhYMLnVqauPeg7MI7VH0U435Dg4alJji05QUl01vmO0OiETsTGh5JoR3zqAbQNgHtUaREkkMji4o9xc7KK1d+eA3pfoVpFu788BvS/QrSL7HcTibe0+pXnzcJZRYResqllFhERZRYREWUWERFlFhERZRYREWUWERFlFhERZRYREWVhEREfsPMV06uYn7DzFdOrzN0eT3+y9fcvl93usoiLzF6qKmr38fN6SX4nK5VpbLo3Z2PdJwYe9znvJf32biTkDkNu6qy1ULpQADZUTxGS1lXV3XFaJ844zh+07vW89Tt6qqRWTQF38WYAcYY2v4nU9yniyoMoY246VFtKwY6VH7LodZWbWF53ucT7BQexbOC7IWeBDG3mY0e2i9qLU2NjeCAFe1jW4BYCyiKd1K6/EkYO0A84qvFPc0D/AAoIzy4QD2jNbBFwi+K4QDio3adC7K7wWvjO9r3e51QtRatAXfw5gRue2ntb/hTtFQ6lidyfb0VZgjOpVVbNE7VH/Dxjew4vYaO9i00jC00cC13GCCD2FXcvParIyQUkY143OaHe9Z30DTwTbt0/fqqXUg5JVMIrOtehtlfsa6M72PPudUexaG16AvHipWu5Hgt9or7gsrqKVuAv2Kh1NINV1D0W4tOi1qZthLhvaWu9gNfYvA+7ZhkYZB/bd/hUGJ4xaVUWuGIXmRej9hl81J9x3+F97Nclok8GB/W0sHa6gXMh3MfArljqC8C/UMTnuDWNLnHY0CpKll3aCyOzneGD7LO+d27B7VL7sueGzgiJgbXaakuPO459WxaoqKR3C0DzV7KZzsdAUauzQKIs/wCrHCONCGte5ob1tIJPs969vc8u/wAwfWzfOpUi9mImJuQwkDtWv8eLojv0qK9z27/MH103zp3PLv8AMH103zqVIrM/J0j4ruYi6I8Aor3PLv8AMH103zp3PLv8wfXTfOpUiZ+TpHxTMRdEeAUV7nl3+YPrpvnTueXf5g+um+dSpEz8nSPimYi6I8Aor3PLv8wfXTfOnc8u/wAwfXTfOpUiZ+TpHxTMRdEeAUV7nl3+YPrpvnTueXf5g+um+dSpEz8nSPimYi6I8Aor3PLv8wfXTfOnc8u/zB9dN86lSJn5OkfFMxF0R4BRXueXf5g+um+dO55d/mD66b51KkTPydI+KZiLojwCivc8u/zB9dN86dzy7/MH103zqVImfk6R8UzEXRHgFFe55d/mD66b507nl3+YPrpvnUqRM/J0j4pmIuiPAKK9zy7/ADB9dN86dz27/MH103zqVImfk6R8UzEXRHgFFTq8u/zB9bN86lSIoOe53CJKk2NrOCAOxERFFTREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREX/2Q=="
+              alt="img"
+            />
+          </div>
+          <h4 class="date">26 Oct 2021</h4>
+          <h3 class="title">
+            Kunal Shah, Vijay Shekhar Sharma, Amrish Rao among 21 angel
+            investors in Masai School
+          </h3>
+          <p class="desc">
+            Masai School aiming to expand to 20 smaller cities by March 2022
+            and...
+          </p>
+        </div>
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="data:image/png;base64,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"
+              alt="img"
+            />
+          </div>
+          <h4 class="date">18 Aug 2020</h4>
+          <h3 class="title">
+            Unitus Ventures leads pre-series A funding for coding focused Masai
+            School
+          </h3>
+          <p class="desc">
+            Software coding platform has raised $2.5 million (Rs 18.6 crore)
+            i...
+          </p>
+        </div>
+      </section>
+      <div class="btn-wrapper"><button>SEE MORE ></button></div>
+    </main>
+    <footer>
+      <h1 class="footer-heading">Our Investors, Who Believe In Us</h1>
+      <div class="brand">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Unitus_Logo.png"
+          alt=""
+        />
+      </div>
+      <div class="brand">
+        <img
+          src="https://data.org/wp-content/uploads/2022/05/omidyar-network-india-logo.png"
+          alt=""
+        />
+      </div>
+      <div class="brand">
+        <img
+          src="https://khetal.com/wp-content/uploads/2018/12/IndiaQuotient.jpg"
+          alt=""
+        />
+      </div>
+    </footer>
+  </body>
+</html>
